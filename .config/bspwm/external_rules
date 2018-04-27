@@ -1,0 +1,15 @@
+#! /bin/sh
+
+fawid=$(bspc query -N -n focused.automatic)
+notify "lol"
+if [ -n "$fawid" ] ; then
+    eval $(xwininfo -id $fawid | \
+        sed -n \
+           -e "s/^ \+Width: \+\([0-9]\+\).*/faw=\1/p" \
+           -e "s/^ \+Height: \+\([0-9]\+\).*/fah=\1/p" )
+    if [ $faw -gt $fah ] ; then
+        echo "split_dir=east"
+    else
+        echo "split_dir=south"
+    fi
+fi

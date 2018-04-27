@@ -1,0 +1,30 @@
+#!/bin/sh
+
+EXTERNAL_OUTPUT="HDMI1"
+INTERNAL_OUTPUT="eDP1"
+
+if xrandr | grep $EXTERNAL_OUTPUT | grep " connected "; then
+    xrandr --output $INTERNAL_OUTPUT --off --output $EXTERNAL_OUTPUT --auto
+    export MONITOR=$EXTERNAL_OUTPUT
+else
+    xrandr --output $INTERNAL_OUTPUT --auto --output $EXTERNAL_OUTPUT --off
+    export MONITOR=$INTERNAL_OUTPUT
+fi
+
+bspc config external_rules_command "${HOME}/.config/bspwm/external_rules"
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+bspc subscribe monitor_remove &
+bspc monitor -d 1 2 3
+
+export MPD_HOST="clyybber"
+
+. ~/torch/install/bin/torch-activate
+
+sxhkd &
+
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+. "${HOME}/shscripts/wmcnfg_productive.sh"
+
+#polybar bar &

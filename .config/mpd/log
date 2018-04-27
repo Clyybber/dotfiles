@@ -1,0 +1,231 @@
+Feb 16 16:26 : client: [0] opened from 127.0.0.1:36628
+Feb 16 16:26 : client: [0] closed
+Feb 16 21:48 : client: [0] opened from 127.0.0.1:42740
+Feb 16 21:48 : client: [0] closed
+Feb 16 21:48 : avahi: Client Disconnected, will reconnect shortly
+Feb 16 21:48 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 17 00:33 : client: [0] opened from 127.0.0.1:44764
+Feb 17 00:33 : client: [0] closed
+Feb 17 00:33 : avahi: Client Disconnected, will reconnect shortly
+Feb 17 00:33 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 17 14:39 : client: [0] opened from 127.0.0.1:38904
+Feb 17 14:39 : client: [0] closed
+Feb 17 14:39 : client: [1] opened from 127.0.0.1:38906
+Feb 17 14:39 : client: [1] closed
+Feb 17 21:17 : client: [2] opened from 127.0.0.1:41406
+Feb 17 21:17 : client: [2] closed
+Feb 17 21:17 : client: [3] opened from 127.0.0.1:41408
+Feb 17 21:17 : client: [3] closed
+Feb 17 21:17 : client: [4] opened from 127.0.0.1:41410
+Feb 17 21:17 : client: [4] closed
+Feb 17 21:17 : client: [5] opened from 127.0.0.1:41412
+Feb 17 21:17 : client: [5] closed
+Feb 17 21:17 : client: [6] opened from 127.0.0.1:41414
+Feb 17 21:17 : client: [6] closed
+Feb 17 21:17 : client: [7] opened from 127.0.0.1:41416
+Feb 17 21:17 : client: [7] closed
+Feb 17 21:17 : client: [8] opened from 127.0.0.1:41418
+Feb 17 21:17 : client: [8] closed
+Feb 17 21:17 : client: [9] opened from 127.0.0.1:41420
+Feb 17 21:17 : client: [9] closed
+Feb 17 21:17 : client: [10] opened from 127.0.0.1:41422
+Feb 17 21:17 : client: [10] closed
+Feb 17 21:17 : client: [11] opened from 127.0.0.1:41424
+Feb 17 21:17 : client: [11] closed
+Feb 17 21:17 : client: [12] opened from 127.0.0.1:41426
+Feb 17 21:17 : client: [12] closed
+Feb 17 21:21 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/24 Track 24.wma"
+Feb 17 21:22 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/25 Track 25.wma"
+Feb 17 22:33 : client: [13] opened from 127.0.0.1:42258
+Feb 17 22:33 : client: [13] closed
+Feb 18 10:52 : client: [0] opened from 127.0.0.1:46180
+Feb 18 10:52 : client: [0] closed
+Feb 18 10:52 : client: [1] opened from 127.0.0.1:46182
+Feb 18 10:52 : client: [1] closed
+Feb 18 12:44 : client: [2] opened from 127.0.0.1:47254
+Feb 18 12:44 : client: [2] closed
+Feb 18 12:44 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 18 22:17 : client: [0] opened from 127.0.0.1:40288
+Feb 18 22:17 : client: [0] closed
+Feb 18 22:17 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 19 20:35 : client: [0] opened from 127.0.0.1:60480
+Feb 19 20:35 : client: [0] closed
+Feb 19 20:35 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 20 18:46 : client: [0] opened from 127.0.0.1:43488
+Feb 20 18:46 : client: [0] closed
+Feb 20 18:46 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 23 14:44 : client: [0] opened from 127.0.0.1:48510
+Feb 23 14:44 : client: [0] closed
+Feb 23 14:44 : avahi: Client Disconnected, will reconnect shortly
+Feb 23 14:44 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 23 14:44 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 24 00:39 : client: [0] opened from 127.0.0.1:38684
+Feb 24 00:39 : client: [0] closed
+Feb 24 00:39 : avahi: Client Disconnected, will reconnect shortly
+Feb 24 00:39 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 24 00:39 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 24 14:43 : client: [0] opened from 127.0.0.1:45924
+Feb 24 14:43 : client: [0] closed
+Feb 24 14:43 : avahi: Client Disconnected, will reconnect shortly
+Feb 24 14:43 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 24 14:43 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 25 11:49 : client: [0] opened from 127.0.0.1:51156
+Feb 25 11:49 : client: [0] closed
+Feb 25 11:49 : avahi: Client Disconnected, will reconnect shortly
+Feb 25 11:49 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 25 11:49 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 25 12:42 : client: [0] opened from 127.0.0.1:52786
+Feb 25 12:42 : client: [0] closed
+Feb 25 12:42 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 25 21:44 : client: [0] opened from 127.0.0.1:51960
+Feb 25 21:44 : client: [0] closed
+Feb 25 21:44 : avahi: Client Disconnected, will reconnect shortly
+Feb 25 21:44 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 25 21:44 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Feb 26 16:49 : client: [0] opened from 127.0.0.1:39068
+Feb 26 16:49 : client: [0] closed
+Feb 26 16:49 : avahi: Client Disconnected, will reconnect shortly
+Feb 26 16:49 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Feb 26 16:49 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Mar 02 16:45 : client: [0] opened from 127.0.0.1:34426
+Mar 02 16:45 : client: [0] closed
+Mar 02 16:45 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Mar 02 23:07 : client: [0] opened from 192.168.178.25:57504
+Mar 02 23:08 : client: [0] closed
+Mar 02 23:08 : client: [1] opened from 192.168.178.25:57505
+Mar 02 23:08 : client: [1] closed
+Mar 03 01:54 : client: [2] opened from 127.0.0.1:37242
+Mar 03 01:54 : client: [2] closed
+Mar 03 01:54 : avahi: Client Disconnected, will reconnect shortly
+Mar 03 01:54 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 03 01:54 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Mar 03 13:54 : client: [0] opened from 127.0.0.1:44928
+Mar 03 13:54 : client: [0] closed
+Mar 03 13:54 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Mar 03 20:00 : client: [0] opened from 127.0.0.1:51656
+Mar 03 20:00 : client: [0] closed
+Mar 03 20:00 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Mar 04 13:38 : client: [0] opened from 127.0.0.1:48446
+Mar 04 13:38 : client: [0] closed
+Mar 04 13:42 : player: played "cdplaylist/DualPlaylist/0 Dub Scout - Dragon Roost Island.mp3"
+Mar 04 13:45 : player: played "cdplaylist/unplaylist/e-dubble - Let Me Oh RE.mp3"
+Mar 04 13:47 : player: played "cdplaylist/unplaylist/Ghostface Killah - Enemies All Around Me (prod. Apollo Brown)(from The Brown Tape).mp3"
+Mar 04 13:50 : player: played "cdplaylist/unplaylist/Mist - Smart Systems_93134664_soundcloud.mp3"
+Mar 04 13:51 : client: [1] opened from 127.0.0.1:48686
+Mar 04 13:51 : client: [1] closed
+Mar 04 14:07 : client: [2] opened from 127.0.0.1:48814
+Mar 04 14:07 : client: [2] closed
+Mar 04 14:07 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/01 Track 1.wma"
+Mar 04 14:07 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:07 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:07 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:07 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:07 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:07 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/01 Track 1.wma"
+Mar 04 14:08 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:08 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:08 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:08 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:08 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:22 : client: [0] opened from 127.0.0.1:58942
+Mar 04 14:22 : client: [0] closed
+Mar 04 14:22 : avahi: Client Disconnected, will reconnect shortly
+Mar 04 14:22 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 04 14:22 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/01 Track 1.wma"
+Mar 04 14:22 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:22 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:22 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:22 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:22 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:23 : avahi: Client Disconnected, will reconnect shortly
+Mar 04 14:23 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 04 14:23 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/01 Track 1.wma"
+Mar 04 14:23 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:23 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:23 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:23 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:23 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:24 : client: [0] opened from 127.0.0.1:42864
+Mar 04 14:24 : client: [0] closed
+Mar 04 14:24 : avahi: Client Disconnected, will reconnect shortly
+Mar 04 14:24 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 04 14:24 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/01 Track 1.wma"
+Mar 04 14:25 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:25 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:25 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:25 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:25 : ffmpeg/asf: asf_read_pts failed
+Mar 04 14:35 : client: [0] opened from 127.0.0.1:39214
+Mar 04 14:35 : client: [0] closed
+Mar 04 14:37 : client: [1] opened from 127.0.0.1:39216
+Mar 04 14:37 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/01 Track 1.wma"
+Mar 04 14:37 : client: [1] closed
+Mar 04 14:45 : client: [2] opened from 127.0.0.1:39280
+Mar 04 14:45 : client: [2] closed
+Mar 04 14:45 : avahi: Client Disconnected, will reconnect shortly
+Mar 04 14:45 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 05 15:19 : client: [0] opened from 127.0.0.1:37584
+Mar 05 15:19 : client: [0] closed
+Mar 05 16:12 : client: [0] opened from 127.0.0.1:52526
+Mar 05 16:12 : client: [0] closed
+Mar 05 16:12 : avahi: Client Disconnected, will reconnect shortly
+Mar 05 16:12 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 05 21:57 : client: [0] opened from 127.0.0.1:45964
+Mar 05 21:57 : client: [0] closed
+Mar 06 17:41 : client: [0] opened from 127.0.0.1:45794
+Mar 06 17:41 : client: [0] closed
+Mar 06 17:41 : avahi: Client Disconnected, will reconnect shortly
+Mar 06 17:41 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 06 18:21 : client: [0] opened from 127.0.0.1:50772
+Mar 06 18:21 : client: [0] closed
+Mar 09 21:10 : client: [0] opened from 127.0.0.1:35684
+Mar 09 21:10 : client: [0] closed
+Mar 11 14:03 : client: [0] opened from 127.0.0.1:54872
+Mar 11 14:03 : client: [0] closed
+Mar 12 22:31 : client: [0] opened from 127.0.0.1:44450
+Mar 12 22:31 : client: [0] closed
+Mar 15 17:49 : client: [0] opened from 127.0.0.1:50716
+Mar 15 17:49 : client: [0] closed
+Mar 15 17:49 : avahi: Client Disconnected, will reconnect shortly
+Mar 15 17:49 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 15 18:18 : client: [0] opened from 127.0.0.1:43236
+Mar 15 18:18 : client: [0] closed
+Mar 15 18:21 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/01 Track 1.wma"
+Mar 15 18:24 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/02 Track 2.wma"
+Mar 15 18:27 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/03 Track 3.wma"
+Mar 15 18:31 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/04 Track 4.wma"
+Mar 15 18:35 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/05 Track 5.wma"
+Mar 15 18:39 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/06 Track 6.wma"
+Mar 15 18:43 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/07 Track 7.wma"
+Mar 15 18:43 : client: [1] opened from 127.0.0.1:43664
+Mar 15 18:43 : client: [1] closed
+Mar 15 18:43 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/08 Track 8.wma"
+Mar 16 22:22 : ffmpeg/asf: asf_read_pts failed
+Mar 16 22:22 : ffmpeg/asf: asf_read_pts failed
+Mar 16 22:22 : ffmpeg/asf: asf_read_pts failed
+Mar 16 22:22 : ffmpeg/asf: asf_read_pts failed
+Mar 16 22:22 : ffmpeg/asf: asf_read_pts failed
+Mar 16 22:23 : client: [0] opened from 127.0.0.1:50340
+Mar 16 22:23 : client: [0] closed
+Mar 16 22:23 : avahi: Client Disconnected, will reconnect shortly
+Mar 16 22:23 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Mar 16 22:23 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/08 Track 8.wma"
+Mar 17 10:08 : ffmpeg/asf: asf_read_pts failed
+Mar 17 10:08 : ffmpeg/asf: asf_read_pts failed
+Mar 17 10:08 : ffmpeg/asf: asf_read_pts failed
+Mar 17 10:08 : ffmpeg/asf: asf_read_pts failed
+Mar 17 10:08 : ffmpeg/asf: asf_read_pts failed
+Mar 17 10:10 : client: [0] opened from 127.0.0.1:36564
+Mar 17 10:10 : client: [0] closed
+Mar 17 10:14 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/08 Track 8.wma"
+Mar 17 10:18 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/09 Track 9.wma"
+Mar 17 10:20 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/10 Track 10.wma"
+Mar 17 10:23 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/11 Track 11.wma"
+Mar 17 10:28 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/12 Track 12.wma"
+Mar 17 10:30 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/13 Track 13.wma"
+Mar 17 10:33 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/14 Track 14.wma"
+Mar 17 10:36 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/15 Track 15.wma"
+Mar 17 10:39 : player: played "cddumps/Unknown artist/Unknown album (4-28-2017 7-47-54 PM)/16 Track 16.wma"
+Mar 17 10:40 : client: [1] opened from 127.0.0.1:37134
+Mar 17 10:40 : client: [1] closed
+Apr 27 17:05 : exception: Failed to open /home/clyybber/.config/mpd/state: No such file or directory

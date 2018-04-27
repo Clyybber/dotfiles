@@ -1,0 +1,5 @@
+URxvt.scrollBar: false
+URxvt.font: xft:Roboto Mono:pixelsize=12
+URxvt.saveLines: 1000
+URxvt*dynamicColors: on
+URxvt.internalBorder: 4

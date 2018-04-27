@@ -1,0 +1,50 @@
+shell mv allegro src
+shell mkdir wyvenpkg
+shell mv allegro allegropkg
+shell mv allegropkg allegro
+shell mv allegro al
+shell mv al allegro.nim
+shell mv al allegro
+shell mv src_ src
+shell mkdir midi_maps
+shell mkdir ableton_projects
+shell mv Beutelspacher_Wie-man-in-eine-Seifenblase-sc_9783406681363\(1\) bbbs
+shell mv bbbs bbbs.pdf
+shell mv bbbs.pdf Beutel.pdf 
+shell mv Bsb-000.jpg ccircle
+shell mv Bsb8-000.jpg eellipse
+shell mv Bsb8-001.jpg pparabola
+shell mv Bsb8-002.jpg hhyperbola
+shell mv Bsb9-000.jpg exmaple
+shell mv ccircle ccircle.jpg
+shell mv eellipse eellipse.jpg
+shell mv hhyperbola hhyperbola.jpg
+shell mv pparabola pparabola.jpg
+shell mv exmaple
+shell mv exmaple exmaple.jpg
+open_with firefox
+open_with waterfox
+shell mv wyven.nim wyven
+deleted
+shell 
+shell mkdir engine
+shell mv target bin
+open_with nano
+shell mkdir states
+open_with kak
+shell mkdir dotfiles
+shell mkdir .config
+
+shell mkdir plugins
+shell mkdir tunefish
+shell tar -xf tunefish-v4.1.0-linux64-vst24.tar.gz
+shell mv program0.txt program67.txt
+shell chmod -x program67.txt
+shell mkdir tmp
+open_with q
+open_withd 
+open_with 
+shell mv dotfiles .dotfiles
+shell config add .
+shell config add .Xresources
+delete

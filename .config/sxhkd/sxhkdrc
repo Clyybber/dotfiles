@@ -1,0 +1,199 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	st
+
+super + alt + Escape
+	mpc pause; \
+	for window_id in $(bspc query -N -n .window); do \
+		bspc node $window_id -c; \
+	done; \
+	bspc quit; \
+	systemctl poweroff;
+
+# program launcher
+super + @space
+	rofi -show run
+
+# make sxhkd reload its configuration files:
+super + r
+	pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+# close and kill
+super + {_,shift + }w
+	bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+#super + m
+#	bspc desktop -l next
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,shift + t,f}
+	bspc node -t {tiled,pseudo_tiled,floating}
+
+# set the node flags
+#super + ctrl + {x,y,z}
+#	bspc node -g {locked,sticky,private}
+
+#
+# focus/swap
+#
+
+
+super + shift + {h,j,k,l}
+	dx=0;dy=0; \
+	{wdir=west;ddir=prev;dx=-20;,wdir=south;dy=20;,wdir=north;dy=-20;,wdir=east;ddir=next;dx=20;} \
+	bspc node -v $dx $dy; \
+	if [ $? -eq 1 ]; then \
+        	if ! bspc node -s $wdir; then \
+        	        id=$(bspc query --nodes --node); \
+			bspc node -d $ddir; \
+			bspc node -f $id; \
+        	fi; \
+	fi;
+
+super + {h,j,k,l}
+	{wdir=west;ddir=prev;,wdir=south;,wdir=north;,wdir=east;ddir=next;} \
+	if ! bspc node -f $wdir; then \
+		bspc desktop -f $ddir; \
+	fi;
+
+# focus the node for the given path jump
+#super + {p,b,comma,period}
+#	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous node in the current desktop
+super + {_,shift + }Tab
+	bspc node -f {next,prev}.local
+
+# focus the next/previous desktop in the current monitor
+super + {comma, period}
+	bspc desktop -f {prev,next}.local
+
+super + shift + {comma, period}
+	id=$(bspc query --nodes --node); \
+	bspc node -d {prev,next}; \
+	bspc node -f $id
+
+# focus the last node/desktop
+super + BackSpace
+	bspc node -f last
+
+# focus the older or newer node in the focus history
+#super + {o,i}
+#	bspc wm -h off; \
+#	bspc node {older,newer} -f; \
+#	bspc wm -h on
+
+# focus or send to the given desktop
+#super + {_,shift + }{1-9,0}
+#	bspc {desktop -f,node -d} '{1-9,10}'
+
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+#super + ctrl + alt + {h,j,k,l}
+#inprogress	
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+#super + ctrl + space
+#	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+# if the current node is automatic, send it to the last manual, otherwise pull the last leaf / send node to preselection
+super + y
+	bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+
+
+##XF Keys
+
+XF86Display
+	if [ $(xrandr | grep -c ' connected') -eq 2 ] && [ $(xrandr | grep -c '*+') -eq 1 ]; then \
+		polybarid=$(pidof 'polybar'); \
+		focusednode=$(bspc query -N -n focused); \
+		xrandr --output $(xrandr | grep -i -B 1 '*' | grep -Eo '^[^ ]+') --off --output $(xrandr | grep -i -B 1 ' +' | grep -Eo '^[^ ]+') --auto; \
+		feh --bg-fill "$(< "$\{HOME\}/.cache/wal/wal")"; \
+		bspc node --focus $focusednode; \
+		polybar bar &; \
+		kill $polybarid; \
+	fi;
+
+XF86Display + ctrl
+	source shscripts/dualmonitor.sh
+
+XF86AudioLowerVolume
+	amixer -D pulse sset Master 5%-
+
+XF86AudioRaiseVolume
+	amixer -D pulse sset Master 5%+
+
+XF86AudioMute
+	amixer sset Master toggle
+
+XF86AudioPlay
+	mpc toggle
+
+XF86AudioStop
+	mpc stop
+
+XF86AudioPrev
+	if [ $(mpc | grep -Eo '[0-9]+:[0-9][0-9]/' | sed 's|\([0-9].*\):\([0-9][0-9]\)/|\1\2|') -ge 5 ]; then \
+		mpc seek 0; \
+	else \
+		mpc prev; \
+	fi;
+
+XF86AudioNext
+	mpc next
+
+XF86MonBrightnessUp
+	result="$(($\{$(($(xbacklight -get)+0.5))%%.*\}+10))"; \
+	xbacklight -set $result; \
+	notify-send "Internal Brightness: $((result<100?result:100))";
+
+XF86MonBrightnessDown
+	result="$(($\{$(($(xbacklight -get)+0.5))%%.*\}-10))"; \
+	xbacklight -set $result; \
+	notify-send "Internal Brightness: $((result>0?result:0))";
+
+XF86MonBrightnessUp + ctrl
+	./shscripts/exbacklightu.sh > /dev/null &	
+
+XF86MonBrightnessDown + ctrl
+	./shscripts/exbacklightd.sh > /dev/null &
+
