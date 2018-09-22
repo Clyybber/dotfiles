@@ -1,5 +1,5 @@
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
+HISTFILE=~/.zhistory
 HISTSIZE=1000
 SAVEHIST=1000
 unsetopt beep
@@ -16,8 +16,20 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+#Kakoune as default editor
+export EDITOR=kak
+
 . ~/torch/install/bin/torch-activate
 export PATH="$HOME/.dynamic-colors/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/builds/nim/bin:$PATH"
 source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
+#Aliases and functions:
+#Git for dotfiles
 alias config='git --git-dir=/home/clyybber/.dotfiles/ --work-tree=/home/clyybber'
+#Switching bspwm presets
+alias appear-productive='. "$HOME/shscripts/wmcnfg_productive.sh"; sed -i "s/wmcnfg_eyecandy/wmcnfg_productive/" "$HOME/.config/bspwm/bspwmrc"'
+alias appear-eyecandy='. "$HOME/shscripts/wmcnfg_eyecandy.sh"; sed -i "s/wmcnfg_productive/wmcnfg_eyecandy/" "$HOME/.config/bspwm/bspwmrc"'
+#Animated wallpaper #TODO suppress nohup output completely
+alias appear-wallpaper='setsid xwinwrap -ov -fs -ni -nf -- mpv --no-config --loop --panscan=1.0 --no-audio --no-sub --hwdec=auto --really-quiet -wid WID'
+
