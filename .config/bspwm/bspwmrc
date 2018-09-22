@@ -11,13 +11,15 @@ else
     export MONITOR=$INTERNAL_OUTPUT
 fi
 
-bspc config external_rules_command "${HOME}/.config/bspwm/external_rules"
+#Rules
+bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
+bspc rule -a qjackctl state=floating
+
+#Look
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc subscribe monitor_remove &
 bspc monitor -d 1 2 3
-
-export MPD_HOST="clyybber"
 
 . ~/torch/install/bin/torch-activate
 
@@ -25,6 +27,6 @@ sxhkd &
 
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-. "${HOME}/shscripts/wmcnfg_productive.sh"
-
 #polybar bar &
+
+. "${HOME}/shscripts/wmcnfg_productive.sh"

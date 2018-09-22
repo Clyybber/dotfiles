@@ -1,7 +1,7 @@
-#! /bin/sh
+#!/bin/sh
 
 fawid=$(bspc query -N -n focused.automatic)
-notify "lol"
+
 if [ -n "$fawid" ] ; then
     eval $(xwininfo -id $fawid | \
         sed -n \
