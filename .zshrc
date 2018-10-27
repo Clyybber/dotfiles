@@ -1,7 +1,13 @@
-# Lines configured by zsh-newuser-install
+# History
 HISTFILE=~/.zhistory
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=1024
+SAVEHIST=1024
+setopt hist_fcntl_lock
+setopt hist_ignore_dups
+setopt hist_reduce_blanks
+setopt share_history #Would be cool if this didnt enable EXTENDED_HISTORY
+
+# No idea
 unsetopt beep
 bindkey -e
 # For wal colours
