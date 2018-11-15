@@ -1,27 +1,27 @@
 #!/bin/sh
 
-EXTERNAL_OUTPUT="HDMI1"
-INTERNAL_OUTPUT="eDP1"
+EXTERNAL_MONITOR="HDMI1"
+INTERNAL_MONITOR="eDP1"
 
-if xrandr | grep $EXTERNAL_OUTPUT | grep " connected "; then
-    xrandr --output $INTERNAL_OUTPUT --off --output $EXTERNAL_OUTPUT --auto
-    export MONITOR=$EXTERNAL_OUTPUT
+if xrandr | grep $EXTERNAL_MONITOR | grep " connected "; then
+    xrandr --output $INTERNAL_MONITOR --off --output $EXTERNAL_MONITOR --auto
+    export MONITOR=$EXTERNAL_MONITOR
 else
-    xrandr --output $INTERNAL_OUTPUT --auto --output $EXTERNAL_OUTPUT --off
-    export MONITOR=$INTERNAL_OUTPUT
+    xrandr --output $INTERNAL_MONITOR --auto --output $EXTERNAL_MONITOR --off
+    export MONITOR=$INTERNAL_MONITOR
 fi
 
 #Rules
 bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
-bspc rule -a qjackctl state=floating
+bspc rule -a "qjackctl" state=floating
+bspc rule -a "GNU Octave" state=floating
+bspc rule -a "matplotlib" state=floating
 
 #Look
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc subscribe monitor_remove &
 bspc monitor -d 1 2 3
-
-. ~/torch/install/bin/torch-activate
 
 sxhkd &
 
