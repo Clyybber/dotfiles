@@ -1,5 +1,5 @@
 # History
-HISTFILE=~/.zhistory
+HISTFILE=~/.zhist
 HISTSIZE=1024
 SAVEHIST=1024
 setopt hist_fcntl_lock
@@ -16,8 +16,6 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/clyybber/.zshrc'
 
-PROMPT="%F{green}%~%f >"
-
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
@@ -26,16 +24,20 @@ compinit
 export EDITOR=kak
 
 . ~/torch/install/bin/torch-activate
+#Path
 export PATH="$HOME/.dynamic-colors/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/builds/nim/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 source $HOME/.dynamic-colors/completions/dynamic-colors.zsh
 #Aliases and functions:
 #Git for dotfiles
-alias config='git --git-dir=/home/clyybber/.dotfiles/ --work-tree=/home/clyybber'
+alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 #Switching bspwm presets
 alias appear-productive='. "$HOME/shscripts/wmcnfg_productive.sh"; sed -i "s/wmcnfg_eyecandy/wmcnfg_productive/" "$HOME/.config/bspwm/bspwmrc"'
 alias appear-eyecandy='. "$HOME/shscripts/wmcnfg_eyecandy.sh"; sed -i "s/wmcnfg_productive/wmcnfg_eyecandy/" "$HOME/.config/bspwm/bspwmrc"'
-#Animated wallpaper #TODO suppress nohup output completely
+#Animated wallpaper
 alias appear-wallpaper='setsid xwinwrap -ov -fs -ni -nf -- mpv --no-config --loop --panscan=1.0 --no-audio --no-sub --hwdec=auto --really-quiet -wid WID'
+#TTY Prompt
+PROMPT="%F{green}%~%f >"
 
