@@ -1,5 +1,5 @@
 # History
-HISTFILE=~/.zhist
+HISTFILE=~/.zhistory
 HISTSIZE=1024
 SAVEHIST=1024
 setopt hist_fcntl_lock
