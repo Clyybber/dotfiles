@@ -32,7 +32,7 @@ super + r
 
 #Spawn terminal
 super + Return
-	st
+	alacritty
 
 #Launcher
 super + space
@@ -205,19 +205,11 @@ super + y
 
 #Switch monitor
 XF86Display
-	if [ $(xrandr | grep -c ' connected') -eq 2 ] && [ $(xrandr | grep -c '*+') -eq 1 ]; then \
-		polybarid=$(pidof 'polybar'); \
-		focusednode=$(bspc query -N -n focused); \
-		xrandr --output $(xrandr | grep -i -B 1 '*' | grep -Eo '^[^ ]+') --off --output $(xrandr | grep -i -B 1 ' +' | grep -Eo '^[^ ]+') --auto; \
-		feh --bg-fill "$(< "$\{HOME\}/.cache/wal/wal")"; \
-		bspc node --focus $focusednode; \
-		polybar bar &; \
-		kill $polybarid; \
-	fi;
+	./shscripts/dualmonitor.sh switchSingleMonitor
 
 #Switch from single-monitor to dual-monitor
 XF86Display + ctrl
-	source shscripts/dualmonitor.sh
+	./shscripts/dualmonitor.sh switchDualMonitor
 
 #Lower master volume
 XF86AudioLowerVolume

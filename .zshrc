@@ -22,8 +22,8 @@ compinit
 
 #Kakoune as default editor
 export EDITOR=kak
+export NNN_USE_EDITOR=1
 
-. ~/torch/install/bin/torch-activate
 #Path
 export PATH="$HOME/.dynamic-colors/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
